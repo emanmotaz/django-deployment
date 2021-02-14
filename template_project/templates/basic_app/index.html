@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+{% extends "basic_app/basic.html" %}
+  {% block body_block %}
+    <h1>Index</h1>
+    <!-- Filters -->
+    {{text | upper}}
+    <!-- new registered filter -->
+    <!-- {{text | cut:'Hello'}} -->
+    {{number | add:"100"}}
+  {% endblock %}

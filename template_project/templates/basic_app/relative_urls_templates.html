@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+{% extends "basic_app/basic.html" %}
+  {% block body_block %}
+    <h1>relatives URLs</h1>
+    <a class="btn btn-success" href="{% url 'admin:index' %}" role="button">Admin View</a>
+    <a class="btn btn-primary" href="{% url 'basic_app:other' %}" role="button">Other Page</a>
+    <a class="btn btn-info" href="{% url 'index' %}" role="button">Index</a>
+    <a class="btn btn-primary" href="#" role="button">Link</a>
+    <a class="btn btn-warning" href="#" role="button">Link</a>
+  {% endblock %}
